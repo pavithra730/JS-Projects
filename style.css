@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cont{
+    text-align: center;
+    background-color: rgb(11, 132, 21);
+    width: 100%;
+    height: 100vh;
+    padding: 5px;
+}
+.cont h1{
+    color: white;
+}
+.container{
+    height: 90vh;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.inputbox{
+    background-color: rgb(191, 191, 201);
+    overflow: scroll;
+    height: 80vh;
+    width: 100%;
+    border-radius: 20px;
+    padding: 15px 8px;
+    text-align: center;
+}
+.inputbox input{
+    padding: 13px;
+    outline: 0;
+    width: 90%;
+    
+    border: 0;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.inputbox button{
+    padding: 18px;
+    margin: 8px;
+    background-color: rgb(20, 241, 98);
+    border: 0;
+    border-radius: 5px;
+    color: rgb(255, 2, 2);
+    font-weight: bold;
+}
+.inputbox button:hover{
+    background-color: rgb(11, 182, 77);
+    color: white;
+}
+.myul{
+    padding: 10px;
+    background-color: rgba(188, 188, 195, 0.947);}
+.mylist{
+    padding: 10px;
+    margin: 15px;
+}
+ul li{
+    font-size: 24px;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    text-align: start;
+}
+.close{
+    
+    float: right;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+    padding: 2px 8px;
+    
+}
+.close:hover{
+    background-color: red;
+    font-weight: bold;
+
+}
+
+
+
+
+
+@media (max-width:550px){
+.cont{
+    text-align: center;
+    background-color: rgb(11, 132, 21);
+    width: 100%;
+    height: 100vh;
+    padding: 5px;
+}
+.cont h1{
+    color: white;
+}
+.container{
+    height: 90vh;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.inputbox{
+    background-color: rgb(191, 191, 201);
+    overflow: scroll;
+    height: 80vh;
+    width: 100%;
+    border-radius: 20px;
+    padding: 15px 0px;
+    text-align: center;
+}
+.inputbox input{
+    padding: 10px;
+    outline: 0;
+    width: 90%;
+    border: 0;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.inputbox button{
+    padding: 10px;
+    margin: 8px;
+    background-color: rgb(20, 241, 98);
+    border: 0;
+    border-radius: 5px;
+    color: rgb(255, 2, 2);
+    font-weight: bold;
+}
+.inputbox button:hover{
+    background-color: rgb(11, 182, 77);
+    color: white;
+}
+.myul{
+    padding: 10px;
+    background-color: rgba(188, 188, 195, 0.947);}
+.mylist{
+    padding: 10px;
+    margin: 15px;
+}
+ul li{
+    font-size: 24px;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    text-align: start;
+}
+.close{
+    
+    float: right;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+    padding: 2px 8px;
+    
+}
+.close:hover{
+    background-color: red;
+    font-weight: bold;
+
+}
+
+}

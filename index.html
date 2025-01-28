@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cont">
+    <h1>TO-DO List</h1>
+    <div class="container">
+        <div class="inputbox">
+            <input type="text" id="input" required>
+            <button onclick="addlist()" class="mybtn">Add to List</button>
+            <ul id="myul" style="list-style: none;" class="myul">    
+            </ul>
+        </div>
+    </div>
+  </div>
+    <script>
+        function addlist(){
+            var inputs=document.getElementById('input').value;
+            var li = document.createElement('LI');
+            li.className='mylist';
+            var t= document.createTextNode(inputs);
+            li.appendChild(t);
+            var div=document.getElementById('myul').appendChild(li);
+            var span=document.createElement("SPAN");
+            var txt=document.createTextNode('\u00D7');
+            span.className="close";
+            span.appendChild(txt);
+            li.appendChild(span);
+            var close=document.getElementsByClassName("close");
+            var i;
+            for(i=0;i<close.length;i++){
+                close[i].onclick=function(){
+                    var ele=this.parentElement;
+                    ele.style.display="none";
+                }
+            }
+            if(inputs==''){
+                alert('You must write something!')
+                li.style.display="none";
+                
+            }
+            document.getElementById('input').value='';
+        }
+    </script>
+</body>
+</html>
